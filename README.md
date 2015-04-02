@@ -1,5 +1,8 @@
 # Bamboo Server
-Inspired by https://github.com/hwuethrich/docker-images/tree/master/bamboo-server
+Inspired by https://github.com/hwuethrich/docker-images/tree/master/bamboo-server.
+
+Differences from the original build file:
+* This installs Java 8 too.
 
 recommended config for running the image:
 ```
