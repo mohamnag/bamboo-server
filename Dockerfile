@@ -18,6 +18,8 @@ EXPOSE 54663
 
 # Add runit service
 ADD bamboo-server.sh /etc/service/bamboo-server/run
+ADD docker-cc.sh /bin
+RUN chmod +x /bin/docker-cc.sh
 
 # Make sure we get latet packages
 RUN apt-get update && apt-get upgrade -y # 28.01.2015
