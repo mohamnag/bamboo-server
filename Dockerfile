@@ -18,6 +18,7 @@ EXPOSE 54663
 
 # Add runit service
 ADD bamboo-server.sh /etc/service/bamboo-server/run
+RUN chmod +x /etc/service/bamboo-server/run
 ADD docker-cc.sh /bin/
 RUN chmod +x /bin/docker-cc.sh
 
