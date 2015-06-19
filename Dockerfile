@@ -9,7 +9,7 @@ MAINTAINER Mohammad Naghavi "mohamnag@gmail.com"
 CMD ["/sbin/my_init"]
 
 # Environment
-ENV BAMBOO_VERSION 5.8.1
+ENV BAMBOO_VERSION 5.9.0
 ENV BAMBOO_HOME /home/bamboo
 
 # Expose web and agent ports
@@ -18,7 +18,7 @@ EXPOSE 54663
 
 # Add runit service
 ADD bamboo-server.sh /etc/service/bamboo-server/run
-ADD docker-cc.sh /bin
+ADD docker-cc.sh /bin/
 RUN chmod +x /bin/docker-cc.sh
 
 # Make sure we get latet packages
